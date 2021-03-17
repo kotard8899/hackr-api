@@ -7,7 +7,8 @@ require('dotenv').config()
 
 const app = express()
 
-mongoose.connect(process.env.DATABASE_CLOUD, {
+mongoose
+    .connect(process.env.DATABASE_CLOUD, {
         useUnifiedTopology: true,
         useNewUrlParser: true,
         useCreateIndex: true,
